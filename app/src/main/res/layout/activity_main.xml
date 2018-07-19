@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/main_location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/background"
+            android:clickable="true"
+            android:gravity="start|center"
+            android:text="湘潭[切换]" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="I CAN 就业网" />
+
+        <ImageView
+            android:id="@id/main_search"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:background="@drawable/background"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/search" />
+    </LinearLayout>
+    <!-- 注册登录 企业版切换-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:id="@id/main_login_success_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@id/main_login_success_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="登录" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/main_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/login" />
+            <!--<TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="登录"
+                android:gravity="center|start"
+                android:layout_weight="1" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/main_register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/register" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:layout_weight="3"
+            android:gravity="end">
+
+            <com.came.viewbguilib.ButtonBgUi
+                android:id="@id/main_change"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|end"
+                android:text="切换到企业版"
+                app:strokeColor="@color/colorPrimary"
+                app:defaultColor="@color/colorAccent"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 推广自己-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/main_promote_self"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+    <!-- 核心功能-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:padding="2dp"
+                android:id="@id/main_job"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/job"/>
+
+            <ImageView
+                android:id="@id/main_start_job"
+                android:padding="2dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/start_job"/>
+
+            <ImageView
+                android:id="@id/main_voice"
+                android:padding="2dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/voice"/>
+            <!--<cn.hnust.icanjiuye.ui.ImageWithText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@mipmap/start_job"
+                android:scaleType="fitCenter"
+                android:id="@id/main_start_job"
+                android:text="创业"
+                android:background="@drawable/background"
+                android:clickable="true"
+                android:layout_height="match_parent"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@id/main_train"
+                android:padding="2dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/train" />
+
+            <ImageView
+                android:id="@id/main_community"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:background="@drawable/background"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/community" />
+            <ImageView
+                android:id="@id/main_hand"
+                android:padding="2dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/finger_language"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 广告-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@id/main_promote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ad" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:id="@id/main_start_page"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/background"
+            android:clickable="true"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/start_page" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@id/main_service"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/background"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/service" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/main_person_center"
+            android:background="@drawable/background"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/person_center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">I CAN jiuye</string>
+    <string name="loading">加载中...</string>
+    <!--<string name="path">192.168.1.1</string>-->
+</resources>

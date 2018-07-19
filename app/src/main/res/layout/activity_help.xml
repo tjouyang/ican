@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbars="vertical"
+        android:textSize="@dimen/font_larger"
+        android:gravity="center"/>
+
+    <com.came.viewbguilib.ButtonBgUi
+        android:id="@+id/bt_advice"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="@dimen/spacing_small"
+        android:text="反馈"
+        app:strokeColor="@color/colorPrimary"
+        app:defaultColor="@color/colorAccent"
+        app:raoundRadius="@dimen/spacing_small"/>
+</LinearLayout>

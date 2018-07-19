@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main_location" type="id"/>
+    <item name="main_login_success_parent" type="id"/>
+    <item name="main_login_success_text" type="id"/>
+    <item name="main_login" type="id"/>
+    <item name="main_register" type="id"/>
+    <item name="main_promote_self" type="id"/>
+    <item name="main_promote" type="id"/>
+    <item name="main_change" type="id"/>
+    <item name="main_job" type="id"/><!--求职-->
+    <item name="main_start_job" type="id"/><!--创业-->
+    <item name="main_train" type="id"/><!--培训-->
+    <item name="main_community" type="id"/><!--社区 -->
+    <item name="main_person_center" type="id"/><!-- 个人中心-->
+    <item name="main_service" type="id"/> <!-- 客服-->
+    <item name="main_start_page" type="id"/> <!-- 首页-->
+    <item name="main_search" type="id"/>
+    <item name="main_voice" type="id"/>
+    <item name="main_hand" type="id"/>
+    
+    <item name="register_fragment_container" type="id"/>
+    <item name="register_button_user_personal" type="id"/>
+    <item name="register_button_user_business" type="id"/>
+    <item name="register_phone" type="id"/>
+    <item name="register_verify" type="id"/>
+    <item name="register_disability_card" type="id"/>
+    <item name="register_disability_category" type="id"/>
+    <item name="register_disability_level" type="id"/>
+    <item name="register_password" type="id"/>
+    <item name="register_previous" type="id"/>
+    <item name="register_next" type="id"/>
+
+    <item name="login_userID" type="id"/>
+    <item name="login_userPassword" type="id"/>
+    <item name="login_button" type="id"/>
+
+    <item name="personCenter_quit" type="id"/>
+    <item name="personCenter_about" type="id"/>
+</resources>

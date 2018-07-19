@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@id/login_userID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入账号" />
+
+        <EditText
+            android:id="@id/login_userPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+
+        <com.came.viewbguilib.ButtonBgUi
+            android:id="@id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:clickable="true"
+            android:text="登录"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_larger"
+            app:bottomLeftRadius="25dp"
+            app:bottomRightRadius="25dp"
+            app:defaultColor="@color/colorPrimary"
+            app:strokeColor="@color/colorPrimary"
+            app:topLeftRadius="25dp"
+            app:topRightRadius="25dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.came.viewbguilib.ButtonBgUi
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                app:bottomLeftRadius="25dp"
+                app:bottomRightRadius="25dp"
+                app:defaultColor="@color/colorAccent"
+                app:strokeColor="@color/colorPrimary"
+                app:topLeftRadius="25dp"
+                app:topRightRadius="25dp"
+                android:text="建立简历" />
+
+            <com.came.viewbguilib.ButtonBgUi
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                app:bottomLeftRadius="25dp"
+                app:bottomRightRadius="25dp"
+                app:defaultColor="@color/colorAccent"
+                app:strokeColor="@color/colorPrimary"
+                app:topLeftRadius="25dp"
+                app:topRightRadius="25dp"
+                android:text="查看简历投递状态" />
+
+            <com.came.viewbguilib.ButtonBgUi
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                app:bottomLeftRadius="25dp"
+                app:bottomRightRadius="25dp"
+                app:defaultColor="@color/colorAccent"
+                app:strokeColor="@color/colorPrimary"
+                app:topLeftRadius="25dp"
+                app:topRightRadius="25dp"
+                android:text="个人资料" />
+
+            <com.came.viewbguilib.ButtonBgUi
+                android:id="@id/personCenter_about"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                app:bottomLeftRadius="25dp"
+                app:bottomRightRadius="25dp"
+                app:defaultColor="@color/colorAccent"
+                app:strokeColor="@color/colorPrimary"
+                app:topLeftRadius="25dp"
+                app:topRightRadius="25dp"
+                android:text="关于我们" />
+
+            <com.came.viewbguilib.ButtonBgUi
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                app:bottomLeftRadius="25dp"
+                app:bottomRightRadius="25dp"
+                app:defaultColor="@color/colorAccent"
+                app:strokeColor="@color/colorPrimary"
+                app:topLeftRadius="25dp"
+                app:topRightRadius="25dp"
+                android:text="修改密码" />
+
+            <com.came.viewbguilib.ButtonBgUi
+                android:id="@id/personCenter_quit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                app:bottomLeftRadius="25dp"
+                app:bottomRightRadius="25dp"
+                app:defaultColor="@android:color/holo_red_light"
+                app:strokeColor="@color/colorPrimary"
+                app:topLeftRadius="25dp"
+                app:topRightRadius="25dp"
+                android:text="退出登录" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
